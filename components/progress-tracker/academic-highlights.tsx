@@ -10,8 +10,8 @@ export const AcademicHighlights = ({
   semestersCompleted,
 }: AcademicHighlightsProps) => {
   return (
-    <div className="bg-white rounded-lg border p-4">
-      <h2 className="text-base font-medium text-[#102052] mb-4">
+    <div className="bg-white rounded-lg border p-4 shadow-md">
+      <h2 className="text-base font-medium text-[#102052] mb-4 pb-3 border-b-2 border-[#b3b5bc58]">
         Academic highlight
       </h2>
 

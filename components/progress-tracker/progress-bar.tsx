@@ -35,7 +35,7 @@ export const ProgressBar = ({
       <div className="relative h-4 bg-gray-100 rounded-full">
         {/* Progress Fill */}
         <div
-          className="absolute left-0 top-0 h-full bg-[#0E2C75] rounded-full"
+          className="absolute left-0 top-0 h-full bg-[#0E2C75] rounded-full transition-all duration-300 ease-in-out"
           style={{ width: `${percentage}%` }}
         />
 
