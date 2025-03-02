@@ -24,7 +24,7 @@ const Header: FC<HeaderProps> = ({ title }) => {
 
     // Safely extract user data with fallbacks
     const userName = session?.user?.name || "OLGA User";
-    const userEmail = session?.user?.email || "student@cmu.edu";
+    const userEmail = session?.user?.email || "student@andrew.cmu.edu";
     const userImage = session?.user?.image;
 
     return (
