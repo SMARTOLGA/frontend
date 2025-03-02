@@ -1,6 +1,6 @@
 const WhyOLGASection = () => {
     return (
-        <section id="why-olga" className="py-16 bg-gray-50">
+        <section id="features" className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
                 <div className="flex items-center space-x-3 mb-6">
                     <div className="h-px w-8 bg-blue-600"></div>

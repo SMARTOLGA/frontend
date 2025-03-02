@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-purple-900 text-white">
+        <footer className="bg-blue-400 text-white">
             <div className="container mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Logo and Company Description */}
@@ -142,10 +142,10 @@ const Footer = () => {
                             <p>Kigali, Rwanda</p>
                             <p className="mt-2">
                                 <a
-                                    href="mailto:support@olga@cmu.edu"
+                                    href="mailto:support@olga.cmu.edu"
                                     className="hover:text-white transition-colors"
                                 >
-                                    support@olga@cmu.edu
+                                    support@olga.cmu.edu
                                 </a>
                             </p>
                         </address>

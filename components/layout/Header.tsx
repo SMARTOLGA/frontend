@@ -48,9 +48,11 @@ function Header() {
                     >
                         About
                     </Link>
-                    <Button className="bg-blue-900 hover:bg-blue-800 ml-4">
-                        Log in
-                    </Button>
+                    <Link href={"/login"}>
+                        <Button className="bg-blue-900 hover:bg-blue-800 ml-4">
+                            Log in
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile menu button - add functionality as needed */}

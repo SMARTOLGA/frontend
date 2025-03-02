@@ -4,17 +4,18 @@ const AboutSection = () => {
     return (
         <section id="about" className="py-16 bg-white">
             <div className="container mx-auto px-4">
-                <div className="flex items-center space-x-3 mb-6">
-                    <div className="h-px w-8 bg-blue-600"></div>
-                    <h2 className="text-blue-600 font-medium">About us</h2>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>
+                        <div className="flex items-center space-x-3 mb-6">
+                            <div className="h-px w-8 bg-blue-600"></div>
+                            <h2 className="text-blue-600 font-medium">
+                                About us
+                            </h2>
+                        </div>
                         <h3 className="text-3xl font-bold text-gray-800 mb-6">
                             Who we are
                         </h3>
-                        <p className="text-gray-600 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed w-4/6">
                             We help undergraduate students at CMU-Africa pursue
                             their degree efficiently with their career goal due
                             to limited advising resources and tight decision
@@ -26,11 +27,11 @@ const AboutSection = () => {
 
                     <div className="relative">
                         <Image
-                            src="/img/olga-dashboard.png"
+                            src="/img/Woman looking at bridge through spyglass.png"
                             alt="OLGA Dashboard demonstration"
                             width={500}
                             height={400}
-                            className="rounded-lg shadow-lg"
+                            // className="rounded-lg shadow-lg"
                         />
                     </div>
                 </div>

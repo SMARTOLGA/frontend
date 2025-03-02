@@ -1,51 +1,51 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
     return (
-        <div className="bg-white w-full overflow-hidden relative">
-            {/* Decorative dots pattern - left top */}
-            <div className="absolute top-0 left-0 grid grid-cols-4 gap-2">
-                {Array(16)
-                    .fill(0)
-                    .map((_, i) => (
-                        <div
-                            key={`dot-lt-${i}`}
-                            className="w-1.5 h-1.5 rounded-full bg-blue-900/80"
-                        ></div>
-                    ))}
-            </div>
+        <section className="w-full min-h-screenh bg-gradient-to-b from-[#E7F0FC] via-[#F2F7FD] to-white overflow-hidden">
+            <div className="container relative mx-auto py-16 flex flex-col lg:flex-row items-center justify-between">
+                {/* Dots pattern on left */}
+                <div className="absolute left-0 top-4 grid grid-cols-12 gap-4">
+                    {Array(96)
+                        .fill(0)
+                        .map((_, i) => (
+                            <div
+                                key={`left-dot-${i}`}
+                                className="w-1.5 h-1.5 rounded-full bg-blue-900 opacity-20"
+                            ></div>
+                        ))}
+                </div>
 
-            {/* Decorative dots pattern - right bottom */}
-            <div className="absolute bottom-0 right-0 grid grid-cols-12 gap-2">
-                {Array(60)
-                    .fill(0)
-                    .map((_, i) => (
-                        <div
-                            key={`dot-rb-${i}`}
-                            className="w-1.5 h-1.5 rounded-full bg-blue-900/80"
-                        ></div>
-                    ))}
-            </div>
-
-            <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between">
-                {/* Left Side - Text Content */}
-                <div className="w-full md:w-1/2 mb-10 md:mb-0 z-10">
-                    <h1 className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight mb-4">
+                {/* Dots pattern on right */}
+                <div className="absolute right-0 bottom-10 grid grid-cols-12 gap-6">
+                    {Array(96)
+                        .fill(0)
+                        .map((_, i) => (
+                            <div
+                                key={`right-dot-${i}`}
+                                className="w-1.5 h-1.5 rounded-full bg-blue-900 opacity-40"
+                            ></div>
+                        ))}
+                </div>
+                {/* Left content */}
+                <div className="lg:w-1/2 z-10 space-y-6">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight">
                         Plan Your Academic Journey with OLGA
                     </h1>
-                    <p className="text-gray-700 text-lg mb-8 max-w-lg">
+                    <p className="text-lg text-gray-800 max-w-xl">
                         Your personalized AI academic advisor that helps
                         CMU-Africa students align courses with career goals and
                         optimize their learning path.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+
+                    <div className="flex flex-col sm:flex-row gap-4 pt-3">
                         <Button
                             asChild
                             className="bg-blue-900 hover:bg-blue-800 text-white font-medium px-8 py-6"
                         >
-                            <Link href="#">
+                            <Link href="/login">
                                 Get Started
                                 <svg
                                     className="ml-2 h-4 w-4"
@@ -73,21 +73,21 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                {/* Right Side - Dashboard Image */}
-                <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                    <div className="relative w-full max-w-md">
+                {/* Right content - Students Illustration */}
+                <div className="lg:w-1/2 mt-12 lg:mt-0 z-10 flex justify-center lg:justify-end">
+                    <div className="relative">
                         <Image
-                            src="/img/olga-dashboard.png"
-                            alt="OLGA Dashboard interface showing student schedule, grades, and learning roadmap"
+                            src="/img/Successful marketing team working together.png"
+                            alt="Students using OLGA academic advisor"
                             width={500}
-                            height={600}
-                            className="rounded-lg shadow-xl z-10 relative"
+                            height={500}
+                            className="object-contain"
                             priority
                         />
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
