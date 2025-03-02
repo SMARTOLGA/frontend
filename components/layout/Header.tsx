@@ -1,30 +1,7 @@
-import AboutSection from "@/components/home/AboutSection";
-import FAQSection from "@/components/home/FAQSection";
-import HeroSection from "@/components/home/HeroSection";
-import Stats from "@/components/home/Stats";
-import TestimonialSection from "@/components/home/TestimonialSection";
-import WhyOLGASection from "@/components/home/WhyOLGASection";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-
-function HomePage() {
-    return (
-        <div className="min-h-screen flex flex-col">
-            <Header />
-            <HeroSection />
-            <Stats />
-            <AboutSection />
-            <WhyOLGASection />
-            <TestimonialSection />
-            <FAQSection />
-            <Footer />
-        </div>
-    );
-}
-
-export default HomePage;
+import React from "react";
+import { Button } from "../ui/button";
 
 function Header() {
     return (
@@ -99,3 +76,5 @@ function Header() {
         </nav>
     );
 }
+
+export default Header;

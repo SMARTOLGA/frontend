@@ -16,6 +16,9 @@ import {
   User,
 } from "lucide-react";
 
+import { useSession } from "next-auth/react";
+
+
 interface MobileNavProps {
   isOpen: boolean;
   onClose: () => void;
@@ -23,6 +26,8 @@ interface MobileNavProps {
 
 const MobileNav: FC<MobileNavProps> = ({ isOpen, onClose }) => {
   const pathname = usePathname();
+  const { data: session } = useSession();
+
 
   const navigationItems = [
     {
@@ -115,8 +120,8 @@ const MobileNav: FC<MobileNavProps> = ({ isOpen, onClose }) => {
               MR
             </div>
             <div className="ml-2">
-              <div className="text-sm font-medium">Mwesiga Rhumba</div>
-              <div className="text-xs text-gray-500">Student</div>
+              <div className="text-sm font-medium">{session?.user.name}</div>
+              <div className="text-xs text-gray-500">{session?.user.email}</div>
             </div>
           </div>
         </div>
