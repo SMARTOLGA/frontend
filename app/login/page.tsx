@@ -171,7 +171,7 @@ const LoginPage = () => {
 
                     {/* CMU Email Requirement Notice */}
                     <p className="text-xs text-gray-500 mt-2 text-center">
-                        Only @cmu.edu email addresses are accepted for
+                        Only @andrew.cmu.edu email addresses are accepted for
                         authentication
                     </p>
                 </div>
